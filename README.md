@@ -14,7 +14,7 @@ When running pressing 'q' on your keyboard closes the script.
 
 ## Details about the kinect_dnn script
 - The script is <em>not</em> limited to only be used with the Kinect. It captures video using OpenCV's capture method, so anything that can act like a webcam on a computer is able to be used with this script.
-- The script runs using OpenCV's dnn library. The model used for facial recognition is a pre trained caffemodel.  
+- The script runs using OpenCV's dnn module. The model used for facial recognition is a caffe model.  
 - When the script is ran it will create a local folder name **images_sets** that stores all of the reference and target images. <em>This can be changed later to have them sent to a Google Drive or some sort of online storage.</em>
 - The script operates on 2 threads. The first thread is used to display a video feed of the facial recognition. The second is to capture the reference png and 5 seconds later capture the target png. The capture thread infinetely repeats untill the video feed is closed.  
 - The pngs are stored in the following file format: **Set**\_**Type**.png. 
